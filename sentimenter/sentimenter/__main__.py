@@ -3,9 +3,9 @@ from sentimenter import create_app
 
 app = create_app()
 
-@app.route('/', methods=["GET"])
-def index():
-    return "ok"
+# routes
+from sentimenter.routes import dashboard
+app.register_blueprint(dashboard.bp)
 
 @app.route('/users', methods=["GET"])
 def get_all_users():
@@ -13,4 +13,4 @@ def get_all_users():
     return jsonify(all_users)
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1")
+    app.run(host="127.0.0.1", debug=True)
