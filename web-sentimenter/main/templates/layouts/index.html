@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MyApp</title>
+        <title>Sentimenter</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
         <link
@@ -24,18 +24,33 @@
                 <div class="flex gap-3 items-center justify-center font-semibold">
                     <li><a href="/" class="hover:underline px-4 py-2">Dashboard</a></li>
                     <div class="flex gap-3">
-                        <a
-                            href="/auth/login"
-                            class="bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
-                        >
-                            Login
-                        </a>
-                        <a
-                            href="/auth/register"
-                            class="bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
-                        >
-                            Register
-                        </a>
+                        {% if g.user %}
+                        <li>Welcome, {{ g.user.email }}!</li>
+                        <li>
+                            <a
+                                href="{{ url_for('logout') }}"
+                                class="bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
+                                >Logout</a
+                            >
+                        </li>
+                        {% else %}
+                        <li>
+                            <a
+                                href="/auth/login"
+                                class="bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
+                            >
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/auth/register"
+                                class="bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
+                            >
+                                Register
+                            </a>
+                        </li>
+                        {% endif %}
                     </div>
                 </div>
             </ul>

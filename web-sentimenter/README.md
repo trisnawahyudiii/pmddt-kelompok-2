@@ -65,6 +65,7 @@ To run the project, follow the steps below:
 8. Run the project:
 
    ```bash
+   cd main
    poetry run python -m sentimenter
    ```
 
