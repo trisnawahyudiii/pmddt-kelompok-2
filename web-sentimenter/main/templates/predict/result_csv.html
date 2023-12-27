@@ -1,0 +1,106 @@
+{% extends "layouts/index.html" %} {% block content %}
+<section class="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-132px)]">
+    <h2>Prediction Result</h2>
+    <div class="flex space-x-4 text-[#f9f9f9]">
+        <div class="flex-1">
+            <canvas id="pieChartKebersihan"></canvas>
+        </div>
+        <div class="flex-1">
+            <canvas id="pieChartService"></canvas>
+        </div>
+        <div class="flex-1">
+            <canvas id="pieChartLinen"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctxKebersihan = document.getElementById('pieChartKebersihan').getContext('2d');
+        var dataKebersihan = {
+            labels: {{ labels_kebersihan | tojson }},
+            datasets: [{
+                data: {{ counts_kebersihan | tojson }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                ]
+            }]
+        };
+        var myPieChartKebersihan = new Chart(ctxKebersihan, {
+            type: 'pie',
+            data: dataKebersihan,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Aspek Kebersihan'
+                    }
+                }
+            },
+        });
+
+        var ctxService = document.getElementById('pieChartService').getContext('2d');
+        var dataService = {
+            labels: {{ labels_service | tojson }},
+            datasets: [{
+                data: {{ counts_service | tojson }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                ]
+            }]
+        };
+        var myPieChartService = new Chart(ctxService, {
+            type: 'pie',
+            data: dataService,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Aspek Service'
+                    }
+                }
+            },
+        });
+
+        var ctxLinen = document.getElementById('pieChartLinen').getContext('2d');
+        var dataLinen = {
+            labels: {{ labels_linen | tojson }},
+            datasets: [{
+                data: {{ counts_linen | tojson }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                ]
+            }]
+        };
+        var myPieChartLinen = new Chart(ctxLinen, {
+            type: 'pie',
+            data: dataLinen,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Aspek Linen'
+                    }
+                }
+            },
+        });
+    </script>
+</section>
+{% endblock %}

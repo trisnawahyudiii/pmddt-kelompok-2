@@ -13,12 +13,18 @@
         >
     </div>
 
-    <form action="/" method="post" class="relative w-1/2 text-[#f9f9f9]">
+    <form
+        action="/predict-csv"
+        method="post"
+        enctype="multipart/form-data"
+        class="relative w-1/2 text-[#f9f9f9]"
+    >
         <input
             type="file"
-            accept="csv"
-            id="fileCSV"
-            name="fileCSV"
+            id="file"
+            name="file"
+            accept=".csv"
+            required
             placeholder="upload your csv file here"
             class="border border-slate-400 px-4 py-2 bg-black focus:ring-1 focus:border-none focus:ring-blue-200 rounded-md w-full"
         />
