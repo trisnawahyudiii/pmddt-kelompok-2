@@ -9,7 +9,7 @@ kamar bersih rapi senang nyaman tidur makan ringan air mineral gratis,pos
 senang temu snack kamar kamar nyaman istirahat,pos
 kamar mandi nyaman senang ada snack lengkap sedia,pos
 fasilitas nyaman tidur ada snack air mineral gratis,pos
-tidur nyaman ac nya dingin,pos
+tidur nyaman ac nya tidakterlalu dingin,pos
 fasilitas baik wifi jangkau kamar,pos
 tidur nyaman ac dingin lebih,pos
 fasilitas nyaman tidur ada snack air mineral gratis,pos
@@ -85,7 +85,7 @@ empuk banget kasur cocok istirahat aktivitas,pos
 tidur nyaman banget bikin betah kamar,pos
 bantal lembut bikin tidur nyaman pulas,pos
 sprei bersih nyaman alam inap,pos
-kasur nyaman banget bikin punggung pegal tidur,pos
+kasur nyaman banget tidakbikin punggung pegal tidur,pos
 tidur cozy banget istirahat asyik,pos
 bantal empuk nyaman bikin tidur nyenyak,pos
 spreinya halus betah kamar nyaman tidur,pos
@@ -121,7 +121,7 @@ kualitas bersih tekstil hotel lebih ekspektasi,pos
 selimut kamar bersih hangat malam nyaman,pos
 handuk sedia lembut,pos
 sprei nyaman sensasi tidur istimewa,pos
-kualitas lengkap tidur dua nyaman bersih,pos
+kualitas lengkap tidur tidakada dua nyaman bersih,pos
 selimut sedia cocok iklim nyaman maksimal,pos
 handuk ganti bantu alam mandi,pos
 sprei milik kualitas tidur nyaman,pos
@@ -148,152 +148,152 @@ sprei kamar bersih kesan nyaman,pos
 kualitas lengkap tidur alam istirahat,pos
 selimut sedia nyaman tidur istimewa,pos
 handuk sedia bersih lembut nyaman mandi istimewa,pos
-sprei usang kusam ganti,neg
-selimut sarung bantal kotor bersih,neg
-handuk kali cium bau sedap,neg
+sprei usang kusam tidaktergantikan,neg
+selimut sarung bantal kotor tidakbersih,neg
+handuk kali cium bau tidaksedap,neg
 bantal cium bau keringat,neg
-lengkap tidur cium bau sedap,neg
+lengkap tidur cium bau tidaksedap,neg
 tamu keluh sprei usang kusam,neg
-handuk kali bersih kondisi baik,neg
-sprei cium bau enak,neg
-selimut sarung bantal bersih nyaman tidur,neg
-handuk kali sedia pada,neg
-komentar lengkap tidur kasar nyaman,neg
-tamu nyaman lengkap tidur usang,neg
-komentar lengkap tidur kusam bersih,neg
-handuk kali kondisi baik ganti,neg
-lengkap tidur kusam nyaman,neg
-tamu keluh lengkap tidur kusam nyaman,neg
-handuk kali kotor kondisi baik,neg
-lengkap tidur awat kondisi,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam bersih nyaman tidur,neg
-handuk kali kondisi baik ganti,neg
-lengkap tidur kusam ganti nyaman,neg
-tamu nyaman bersih lengkap tidur,neg
-lengkap tidur awat kondisi,neg
-tamu keluh bau sedap lengkap tidur,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-handuk kali pada,neg
-lengkap tidur kusam nyaman,neg
-tamu nyaman lengkap tidur bersih,neg
-handuk kali kondisi baik ganti,neg
-lengkap tidur kusam bersih nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam bersih nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam bersih nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam bersih nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam bersih nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam bersih nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
-tamu nyaman bau sedap lengkap tidur,neg
-lengkap tidur kusam ganti nyaman,neg
-handuk kali pada,neg
-tamu nyaman lengkap tidur bersih,neg
-lengkap tidur kusam kondisi baik pengaruh nyaman tidur,neg
+handuk kali tidakbersih tidakdalam kondisi baik,neg
+sprei cium bau tidakenak,neg
+selimut sarung bantal tidakbersih tidaknyaman tidur,neg
+handuk kali tidaktersedia pada,neg
+komentar lengkap tidur kasar tidaknyaman,neg
+tamu tidaknyaman lengkap tidur usang,neg
+komentar lengkap tidur kusam tidakbersih,neg
+handuk kali tidakdalam kondisi baik tidaktergantikan,neg
+lengkap tidur kusam tidaknyaman,neg
+tamu keluh lengkap tidur kusam tidaknyaman,neg
+handuk kali kotor tidakdalam kondisi baik,neg
+lengkap tidur awat tidakdalam kondisi,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman tidur,neg
+handuk kali tidakdalam kondisi baik tidaktergantikan,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+tamu tidaknyaman bersih lengkap tidur,neg
+lengkap tidur awat tidakdalam kondisi,neg
+tamu keluh bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+handuk kali tidakdiberikan pada,neg
+lengkap tidur kusam tidaknyaman,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+handuk kali tidakdalam kondisi baik tidaktergantikan,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidakterlihat bersih tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
+tamu tidaknyaman bau tidaksedap lengkap tidur,neg
+lengkap tidur kusam tidaktergantikan tidaknyaman,neg
+handuk kali tidakdiberikan pada,neg
+tamu tidaknyaman lengkap tidur bersih,neg
+lengkap tidur kusam tidakdalam kondisi baik pengaruh nyaman tidur,neg
 sprei kusam bersih,neg
 selimut kamar usang awat,neg
-handuk sedia kasar nyaman,neg
-kualitas lengkap tidur kecewa sesuai harga bayar,neg
-kecewa tekstur selimut nyaman,neg
+handuk sedia kasar tidaknyaman,neg
+kualitas lengkap tidur kecewa tidaksesuai harga bayar,neg
+kecewa tekstur selimut tidaknyaman,neg
 lengkap tidur hotel kusut awat,neg
-handuk sedia kusam segar,neg
-sprei kotor awat,neg
-selimut kamar kasar nyaman tidur,neg
+handuk sedia kusam tidaksegar,neg
+sprei kotor tidakterawat,neg
+selimut kamar kasar tidakmemberikan nyaman tidur,neg
 kualitas lengkap tidur standar harap,neg
-handuk sedia kasar layak,neg
-sprei lusuh kesan,neg
-selimut kamar bersih senang,neg
-kualitas lengkap tidur rendah alam inap senang,neg
-handuk sedia kusut nyaman,neg
-sprei kotor awat,neg
-selimut kamar segar awat,neg
+handuk sedia kasar tidaklayak,neg
+sprei lusuh tidakmemberikan kesan,neg
+selimut kamar bersih tidakmenyenangkan,neg
+kualitas lengkap tidur rendah alam inap tidakmenyenangkan,neg
+handuk sedia kusut tidaknyaman,neg
+sprei kotor tidakterawat,neg
+selimut kamar segar tidakterawat,neg
 kualitas lengkap tidur buruk kesan negatif,neg
-handuk sedia kasar senang,neg
-sprei usang kesan bersih,neg
+handuk sedia kasar tidakmenyenangkan,neg
+sprei usang tidakmemberikan kesan bersih,neg
 selimut kamar kotor jaga bersih,neg
-kualitas lengkap tidur rendah istirahat malam nyaman,neg
-handuk sedia kasar nyaman mandi,neg
-sprei kusam nyaman tidur,neg
-selimut kamar awat bersih,neg
+kualitas lengkap tidur rendah istirahat malam tidaknyaman,neg
+handuk sedia kasar tidakmemberikan nyaman mandi,neg
+sprei kusam tidaknyaman tidur,neg
+selimut kamar tidakterawat bersih,neg
 kualitas lengkap tidur harap kecewa,neg
 handuk sedia kasar segar,neg
-sprei kotor kesan bersih,neg
-selimut kamar nyaman awat,neg
+sprei kotor tidakmemberikan kesan bersih,neg
+selimut kamar tidaknyaman tidakterawat,neg
 kualitas lengkap tidur rendah kesan buruk hotel,neg
-handuk sedia kusam nyaman,neg
+handuk sedia kusam tidakmemberikan nyaman,neg
 sprei usang bersih,neg
-selimut kamar kotor nyaman tidur,neg
+selimut kamar kotor tidakmemberikan nyaman tidur,neg
 kualitas lengkap tidur buruk ganggu alam inap,neg
-handuk sedia kasar segar,neg
-sprei kusut kesan rapi,neg
-selimut kamar usang nyaman,neg
+handuk sedia kasar tidaksegar,neg
+sprei kusut tidakmemberikan kesan rapi,neg
+selimut kamar usang tidaknyaman,neg
 kualitas lengkap tidur rendah alam inap buruk,neg
-handuk sedia kasar nyaman,neg
-sprei kotor awat,neg
-selimut kamar bersih jaga bersih,neg
-kualitas lengkap tidur kecewa sesuai harap,neg
-handuk sedia kusam nyaman,neg
+handuk sedia kasar tidaknyaman,neg
+sprei kotor tidakterawat,neg
+selimut kamar bersih tidakterjaga bersih,neg
+kualitas lengkap tidur kecewa tidaksesuai harap,neg
+handuk sedia kusam tidaknyaman,neg
 sprei usang bersih,neg
-selimut kamar kotor nyaman tidur,neg
+selimut kamar kotor tidakmemberikan nyaman tidur,neg
 kualitas lengkap tidur buruk dampak negatif alam inap,neg
-handuk sedia kasar segar,neg
+handuk sedia kasar tidaksegar,neg
 sprei kusam nyaman tidur,neg
-selimut kamar awat bersih,neg
+selimut kamar tidakterawat bersih,neg
 alat tidur hotel kusut bersih,neg
-sprei sedia usang awat,neg
-selimut kamar bersih nyaman,neg
-kualitas selimut buruk nyaman tidur,neg
+sprei sedia usang tidakterawat,neg
+selimut kamar tidakcukup bersih tidaknyaman,neg
+kualitas selimut buruk tidakmemberikan nyaman tidur,neg
 alat tidur kamar kusam jaga bersih,neg
-guna sprei kotor awat,neg
-lengkap tidur kusut nyaman harap,neg
-sprei lusuh nyaman tidur,neg
-lengkap tidur hotel kusam nyaman,neg
+guna sprei kotor tidakterawat,neg
+lengkap tidur kusut tidakmemberikan nyaman harap,neg
+sprei lusuh tidakmemberikan nyaman tidur,neg
+lengkap tidur hotel kusam tidaknyaman,neg
 selimut kamar kotor kesan bersih,neg
-alat tidur kusut kesan rapi,neg
-guna sprei kotor awat,neg
-lengkap tidur kusam nyaman,neg
+alat tidur kusut tidakmemberikan kesan rapi,neg
+guna sprei kotor tidakterawat,neg
+lengkap tidur kusam tidaknyaman,neg
 selimut sedia usang nyaman tidur,neg

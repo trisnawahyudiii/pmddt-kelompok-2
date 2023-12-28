@@ -1,106 +1,165 @@
 {% extends "layouts/index.html" %} {% block content %}
-<section class="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-132px)]">
-    <h2>Prediction Result</h2>
-    <div class="flex space-x-4 text-[#f9f9f9]">
-        <div class="flex-1">
-            <canvas id="pieChartKebersihan"></canvas>
+<section class="flex flex-col justify-center text-center gap-3">
+    <div class="flex flex-wrap items-center justify-center w-full gap-3">
+        <div
+            class="flex-1 flex flex-col rounded-2xl border border-1-[#f9f9f9] p-10 bg-[#09090a] text-[#f9f9f9]"
+        >
+            <h1 class="capitalize text-2xl font-semibold">Clustering Result</h1>
+            <canvas id="pieChartCluster"></canvas>
         </div>
-        <div class="flex-1">
-            <canvas id="pieChartService"></canvas>
-        </div>
-        <div class="flex-1">
-            <canvas id="pieChartLinen"></canvas>
+        <div class="rounded-2xl border border-1-[#f9f9f9] p-10 bg-[#09090a] text-[#f9f9f9] h-full">
+            <h1 class="capitalize text-2xl font-semibold">Prediction Result</h1>
+            <div class="flex flex-wrap space-x-4 text-[#f9f9f9] h-full items-center justify-center">
+                <div class="flex-1">
+                    <canvas id="pieChartKebersihan"></canvas>
+                </div>
+                <div class="flex-1">
+                    <canvas id="pieChartService"></canvas>
+                </div>
+                <div class="flex-1">
+                    <canvas id="pieChartLinen"></canvas>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        var ctxKebersihan = document.getElementById('pieChartKebersihan').getContext('2d');
-        var dataKebersihan = {
-            labels: {{ labels_kebersihan | tojson }},
-            datasets: [{
-                data: {{ counts_kebersihan | tojson }},
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-                ]
-            }]
-        };
-        var myPieChartKebersihan = new Chart(ctxKebersihan, {
-            type: 'pie',
-            data: dataKebersihan,
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Aspek Kebersihan'
-                    }
-                }
-            },
-        });
-
-        var ctxService = document.getElementById('pieChartService').getContext('2d');
-        var dataService = {
-            labels: {{ labels_service | tojson }},
-            datasets: [{
-                data: {{ counts_service | tojson }},
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-                ]
-            }]
-        };
-        var myPieChartService = new Chart(ctxService, {
-            type: 'pie',
-            data: dataService,
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Aspek Service'
-                    }
-                }
-            },
-        });
-
-        var ctxLinen = document.getElementById('pieChartLinen').getContext('2d');
-        var dataLinen = {
-            labels: {{ labels_linen | tojson }},
-            datasets: [{
-                data: {{ counts_linen | tojson }},
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-                ]
-            }]
-        };
-        var myPieChartLinen = new Chart(ctxLinen, {
-            type: 'pie',
-            data: dataLinen,
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Aspek Linen'
-                    }
-                }
-            },
-        });
-    </script>
+    <div
+        class="flex flex-col rounded-2xl border border-1-[#f9f9f9] p-10 bg-[#09090a] text-[#f9f9f9] w-full"
+    >
+        <h1 class="capitalize text-2xl font-semibold">Samples</h1>
+        <table class="flex rounded overflow-hidden border border-1-[#f9f9f9]">
+            <tr>
+                <th>No</th>
+                <th>Review</th>
+                <th>Aspek</th>
+                <th>Label</th>
+            </tr>
+            {% for aspek, sample in samples_per_aspek.iterrows() %}
+            <tr>
+                <td>{{ aspek+1 }}</td>
+                <td>{{ sample['review'] }}</td>
+                <td>{{ sample['aspek'] }}</td>
+                <td>{{ sample['label'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctxCluster = document.getElementById('pieChartCluster').getContext('2d');
+    var dataCluster = {
+        labels: {{ labels_cluster | tojson }},
+        datasets: [{
+            data: {{ counts_cluster | tojson }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+            ]
+        }]
+    };
+    var myPieChartCluster = new Chart(ctxCluster, {
+        type: 'pie',
+        data: dataCluster,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Clusters'
+                }
+            }
+        },
+    });
+
+    var ctxKebersihan = document.getElementById('pieChartKebersihan').getContext('2d');
+    var dataKebersihan = {
+        labels: {{ labels_kebersihan | tojson }},
+        datasets: [{
+            data: {{ counts_kebersihan | tojson }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+            ]
+        }]
+    };
+    var myPieChartKebersihan = new Chart(ctxKebersihan, {
+        type: 'pie',
+        data: dataKebersihan,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Aspek Kebersihan'
+                }
+            }
+        },
+    });
+
+    var ctxService = document.getElementById('pieChartService').getContext('2d');
+    var dataService = {
+        labels: {{ labels_service | tojson }},
+        datasets: [{
+            data: {{ counts_service | tojson }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+            ]
+        }]
+    };
+    var myPieChartService = new Chart(ctxService, {
+        type: 'pie',
+        data: dataService,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Aspek Service'
+                }
+            }
+        },
+    });
+
+    var ctxLinen = document.getElementById('pieChartLinen').getContext('2d');
+    var dataLinen = {
+        labels: {{ labels_linen | tojson }},
+        datasets: [{
+            data: {{ counts_linen | tojson }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+            ]
+        }]
+    };
+    var myPieChartLinen = new Chart(ctxLinen, {
+        type: 'pie',
+        data: dataLinen,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Aspek Linen'
+                }
+            }
+        },
+    });
+</script>
 {% endblock %}
