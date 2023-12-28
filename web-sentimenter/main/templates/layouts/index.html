@@ -16,8 +16,10 @@
     </head>
     <body class="min-h-screen bg-black">
         <!-- navbar -->
-        <nav class="flex items-center justify-center bg-[#09090a] text-[#f9f9f9] py-5 sticky top-0">
-            <ul class="container mx-auto flex items-center justify-between gap-3">
+        <nav
+            class="flex items-center justify-center bg-[#09090a]/90 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-[#f9f9f9] py-5 sticky top-0 border-b border-b-[#27272a]"
+        >
+            <ul class="container px-3 mx-auto flex items-center justify-between gap-3">
                 <li>
                     <a href="/" class="hover:underline uppercase font-bold text-xl">Sentimenter</a>
                 </li>
@@ -57,10 +59,12 @@
         </nav>
 
         <!-- content -->
-        <main class="container mx-auto flex flex-col">{% block content %} {% endblock %}</main>
+        <main class="container px-3 py-3 mx-auto flex flex-col">
+            {% block content %} {% endblock %}
+        </main>
 
         <!-- footer -->
-        <footer class="container flex gap-3 py-5 mx-auto w-full text-[#f9f9f9]">
+        <footer class="container px-3 flex gap-3 py-5 mx-auto w-full text-[#f9f9f9]">
             <ul class="flex gap-3">
                 <li>Contact</li>
                 <li>Term</li>

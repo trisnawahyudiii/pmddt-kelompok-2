@@ -7,17 +7,19 @@ from flask import (
     flash,
     session,
     g,
-    current_app,
 )
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 from flask_cors import CORS
 import os
-from main.model.nb_cluster import cluster_review
-from main.model.nb_kebersihan import predict_review_kebersihan
-from main.model.nb_linen import predict_review_linen
-from main.model.nb_service import predict_review_service
+from main.model.nb_cluster import cluster_review, cluster_review_single
+from main.model.nb_kebersihan import (
+    predict_review_kebersihan,
+    single_predict_review_kebersihan,
+)
+from main.model.nb_linen import predict_review_linen, single_predict_review_linen
+from main.model.nb_service import predict_review_service, single_predict_review_service
 import pandas as pd
 from werkzeug.utils import secure_filename
 
@@ -212,7 +214,21 @@ def predict():
 @app.route("/predict-single", methods=["POST"])
 def predict_single():
     if request.method == "POST":
-        print("single")
-        return render_template("predict/result_single.html")
+        review = request.form.get("review")
+
+        # process
+        clean_review, aspek = cluster_review_single(review)
+
+        if aspek == "kebersihan":
+            label = single_predict_review_kebersihan(clean_review)
+        if aspek == "linen":
+            label = single_predict_review_linen(clean_review)
+        if aspek == "service":
+            label = single_predict_review_service(clean_review)
+
+        label = "Negative" if label[0] == "neg" else "Positive"
+        return render_template(
+            "predict/result_single.html", review=review, aspect=aspek, label=label
+        )
 
     return render_template("dashboard/single.html")

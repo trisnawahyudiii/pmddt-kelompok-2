@@ -5,15 +5,13 @@
 }
 
 table {
-    border-collapse: collapse;
     width: 50%;
-    margin: 20px;
     width: 100%;
 }
 
 td,
 th {
-    border: 1px solid #f9f9f9;
+    /* border: 1px solid #f9f9f9; */
     padding: 8px;
     text-align: left;
 }
