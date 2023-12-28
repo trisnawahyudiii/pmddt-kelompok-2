@@ -4,9 +4,9 @@
 
 Sentimenter is the final project for the "Machine Learning for Text Data" course, supervised by Dr. Anak Agung Istri Ngurah Eka Karyawati, S.Si., M.Eng. The project is a collaborative effort by the following students:
 
-- **I Wayan Trisna Wahyudi** (2008561018)
-- **I Gusti Ayu Purnami Pinatih** (2008561029)
-- **Revi Valen Sumendap** (2008561099)
+-   **I Wayan Trisna Wahyudi** (2008561018)
+-   **I Gusti Ayu Purnami Pinatih** (2008561029)
+-   **Revi Valen Sumendap** (2008561099)
 
 ## Project Description
 
@@ -18,56 +18,56 @@ To run the project, follow the steps below:
 
 1. Ensure that you have the Poetry package installed:
 
-   ```bash
-   pip install poetry
-   ```
+    ```bash
+    pip install poetry
+    ```
 
 2. Clone the project repository:
 
-   ```bash
-   git clone https://github.com/trisnawahyudiii/pmdt-kelompok-2.git
-   ```
+    ```bash
+    git clone https://github.com/trisnawahyudiii/pmdt-kelompok-2.git
+    ```
 
-3. Navigate to the project's "sentimenter" directory:
+3. Navigate to the project's "web-sentimenter" directory:
 
-   ```bash
-   cd sentimenter
-   ```
+    ```bash
+    cd web-sentimenter
+    ```
 
 4. Enter the virtual environment:
 
-   ```bash
-   poetry shell
-   ```
+    ```bash
+    poetry shell
+    ```
 
 5. Create a `.env` file based on the provided `.env.example`:
 
-   - For Windows:
+    - For Windows:
 
-     ```bash
-     copy .env.example .env
-     ```
+        ```bash
+        copy .env.example .env
+        ```
 
-   - For Linux:
+    - For Linux:
 
-     ```bash
-     cp .env.example .env
-     ```
+        ```bash
+        cp .env.example .env
+        ```
 
 6. Configure the `.env` file with the required settings.
 
 7. Install project dependencies:
 
-   ```bash
-   poetry install
-   ```
+    ```bash
+    poetry install
+    ```
 
 8. Run the project:
 
-   ```bash
-   cd main
-   poetry run python -m sentimenter
-   ```
+    ```bash
+    cd main
+    flask run
+    ```
 
 ## Additional Notes
 
