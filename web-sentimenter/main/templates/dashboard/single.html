@@ -1,15 +1,17 @@
 {% extends "layouts/index.html" %} {% block content %}
-<section class="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-132px)]">
+<section
+    class="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-132px-1.6rem)]"
+>
     <div class="flex gap-3 mb-3">
         <a
             href="/"
             class="font-semibold bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
-            >Uplad CSV</a
+            >Single Text</a
         >
         <a
-            href="/single"
+            href="/multi"
             class="font-semibold bg-[#f9f9f9] hover:bg-[#f9f9f9]/90 text-[#09090a] hover:text-[#09090a] border border-[#f9f9f9] px-4 py-2 rounded focus:ring focus:ring-[#f9f9f9]"
-            >Single Text</a
+            >Upload CSV</a
         >
     </div>
 

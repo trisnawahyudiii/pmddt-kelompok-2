@@ -13,6 +13,8 @@ from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 from flask_cors import CORS
 import os
+from werkzeug.utils import secure_filename
+
 from main.model.nb_cluster import cluster_review, cluster_review_single
 from main.model.nb_kebersihan import (
     predict_review_kebersihan,
@@ -21,7 +23,6 @@ from main.model.nb_kebersihan import (
 from main.model.nb_linen import predict_review_linen, single_predict_review_linen
 from main.model.nb_service import predict_review_service, single_predict_review_service
 import pandas as pd
-from werkzeug.utils import secure_filename
 
 load_dotenv()
 
@@ -71,16 +72,21 @@ def load_user():
     else:
         g.user = None
 
+    # Check if the route requires authentication
+    if request.endpoint in ["multi"] and not g.user:
+        flash("You must be logged in to access this page", "danger")
+        return redirect(url_for("login"))
+
 
 # controllers
 @app.route("/")
 def dashboard():
-    return render_template("dashboard/multi.html")
-
-
-@app.route("/single")
-def single():
     return render_template("dashboard/single.html")
+
+
+@app.route("/multi")
+def multi():
+    return render_template("dashboard/multi.html")
 
 
 # AUTH
