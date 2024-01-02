@@ -172,6 +172,10 @@ def predict():
             flash("No selected file", "danger")
             return redirect(url_for("multi"))
 
+        if not allowed_file(file.filename):
+            flash("File type does not supported", "danger")
+            return redirect(url_for("multi"))
+
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
