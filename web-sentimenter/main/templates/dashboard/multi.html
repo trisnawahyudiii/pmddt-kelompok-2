@@ -1,4 +1,4 @@
-{% extends "layouts/index.html" %} {% block content %}
+{% extends "layouts/index.html" %} {% block content %} {% include 'components/toast.html' %}
 <section
     class="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-132px-1.6rem)]"
 >
@@ -30,14 +30,7 @@
                 <p class="text-gray-300">Drag & drop your CSV file here</p>
                 <p class="my-1 text-sm text-gray-400">or</p>
                 <label for="file" class="mt-2 cursor-pointer">
-                    <input
-                        type="file"
-                        id="file"
-                        name="file"
-                        accept=".csv"
-                        required
-                        class="hidden"
-                    />
+                    <input type="file" id="file" name="file" accept=".csv" class="hidden" />
                     <span
                         id="browseFileButton"
                         class="inline-block text-white py-2 px-4 rounded-md cursor-pointer"
@@ -98,6 +91,28 @@
         const fileName = fileInput.files[0].name;
         fileInfoContainer.innerHTML = `<i class="fas fa-file-csv "></i> ${fileName}`;
     }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to show a toast
+        function showToast(message, type) {
+            const toast = document.querySelector("[x-data]");
+            toast.__x.$data.message = message;
+            toast.__x.$data.type = type;
+            toast.__x.$data.show = true;
+
+            // Hide the toast after 3 seconds (adjust as needed)
+            setTimeout(() => {
+                toast.__x.$data.show = false;
+            }, 3000);
+        }
+
+        const messages = `{% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}{% for category, message in messages %}{{message}}{% endfor %}{% endif %}{% endwith %}`;
+        const category = `{% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}{% for category, message in messages %}{{category}}{% endfor %}{% endif %}{% endwith %}`;
+        console.log("messages: ", messages);
+        console.log("category: ", category);
+        showToast(messages, category);
+    });
 </script>
 
 {% endblock %}
